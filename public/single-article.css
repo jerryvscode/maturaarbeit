@@ -1,0 +1,99 @@
+/* Header */
+
+.article-button,
+.articlewish-button,
+.contact-button {
+  background-color: rgb(241, 240, 228);
+
+  color: black;
+}
+
+/* Artikelansicht Seite */
+
+.article-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(62, 63, 41);
+}
+
+.article-text-div {
+  width: 500px;
+
+  text-align: justify;
+}
+
+.name-date {
+  margin-top: 8px;
+
+  font-weight: bold;
+  }
+
+.change-article-buttons-div-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.change-article-buttons-div {
+  width: 300px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.like-button-div {
+  text-align: center;
+}
+
+/* Buttons */
+.change-article-buttons,
+.like-button {
+  padding: 7px 7px;
+
+  background-color: rgb(62, 63, 41);
+
+  font-size: 14px;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.change-article-buttons:hover,
+.like-button:hover {
+  opacity: 0.8;
+}
+.change-article-buttons:active,
+.like-button:active {
+  opacity: 0.6;
+}
+
+/* Bildschirmanpassung */
+
+@media (max-width: 550px) {
+  .article-text-div {
+    width: 400px;
+  }
+  .article-div {
+  margin-top: -100px;
+}
+}
+
+@media (max-width: 450px) {
+  .article-text-div {
+    width: 300px;
+  }
+
+  .article-div {
+    margin-top: -100px;
+  }
+}

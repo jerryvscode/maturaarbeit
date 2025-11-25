@@ -1,0 +1,149 @@
+/* Header */
+
+.article-button,
+.contact-button,
+.articlewish-button {
+  background-color: rgb(241, 240, 228);
+
+  color: black;
+}
+
+/* Artikel erstellen/bearbeiten Seite */
+
+.create-article-div {
+  margin-top: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.create-article-form {
+  height: 550px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title-input {
+  width: 363px;
+
+  font-size: 15px;
+
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(62, 63, 41);
+  border-radius: 7px;
+}
+
+.picture-input {
+  width: 220px;
+  padding: 1px;
+
+  font-size: 13px;
+
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(62, 63, 41);
+  border-radius: 7px;
+}
+
+.article-input {
+  width: 600px;
+  height: 350px;
+  padding-bottom: 100px;
+
+  font-size: 15px;
+
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(62, 63, 41);
+  border-radius: 7px;
+}
+
+.create-article-button {
+  padding: 5px 10px;
+
+  background-color: rgb(62, 63, 41);
+
+  font-size: 15px;
+  color: white;
+  
+  border: none;
+  border-radius: 50px;
+  
+  transition: opacity 0.2s;
+}
+.create-article-button:hover {
+  opacity: 0.8;
+}
+.create-article-button:active {
+  opacity: 0.6;
+}
+
+.picture-upload-legend {
+  margin-bottom: 10px;
+  
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Errormeldung */
+
+.notice {
+  width: 360px;
+  padding: 5px 5px;
+  margin-top: -10px;
+
+  background-color: rgba(188, 168, 141, 0.3);
+
+  text-align: center;
+
+  border-radius: 6px;
+}
+
+/* Bildschirmanpassung */
+
+@media (max-width: 650px) {
+  .article-input {
+    width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .create-article-div {
+    margin-top: -90px;
+  }
+
+  .article-input {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .create-article-div {
+    margin-top: -90px;
+  }
+
+  .title-input {
+    width: 300px;
+  }
+
+  .article-input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .create-article-div {
+    margin-top: -100px;
+  }
+
+  .picture-input {
+    width: 170px;
+  }
+}

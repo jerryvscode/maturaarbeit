@@ -1,0 +1,40 @@
+/* Header */
+
+.contact-button {
+  background-color: rgb(125, 141, 134);
+
+  color: white;
+}
+
+.article-button,
+.articlewish-button {
+  background-color: rgb(241, 240, 228);
+
+  color: black;
+}
+
+/* Kontakt Seite */
+
+.contact-div {
+  margin-top: 160px;
+
+  text-align: center;
+}
+
+.contact-picture {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 10px;
+}
+
+.contact-name {
+  font-size: 20px;
+  color: rgb(62, 63, 41);
+  font-weight: bold;
+}
+
+.contact-email {
+  font-size: 17px;
+  color: rgb(62, 63, 41);
+}

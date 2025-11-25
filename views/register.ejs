@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp</title>
+    <link rel="stylesheet" href="/general.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/account.css">
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <%- include("includes/header") %>
+    <main>
+      <div class="register-div"> 
+        <!---->
+        <form action="/register" method="POST">
+          <% errors.forEach(error => { %>
+          <p class="notice"><%= errors %></p>
+          <% }) %>
+          <!---->
+          <div class="register-form">
+            <legend class="login-register-legend">Registrieren</legend>
+            <input class="account-input" id="email" name="email" placeholder="Email...">
+            <input class="account-input" id="username" name="username" placeholder="Benutzername...">
+            <input class="account-input" id="password" name="password" type="password" placeholder="Passwort..."></input>
+            <button class="send-button">Registrieren</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+    <%- include("includes/footer") %>
+  </body>
+</html>

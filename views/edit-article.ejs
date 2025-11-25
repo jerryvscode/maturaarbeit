@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp</title>
+    <link rel="stylesheet" href="/general.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/create-edit-article.css">
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <%- include("includes/header") %>
+    <main>
+      <div class="create-article-div">
+        <!---->
+        <% errors.forEach(errors => { %>
+          <p class="notice"><%= errors %></p>
+          <% }) %>
+          <!---->
+        <form class="create-article-form" action="/edit-article/<%= article.id %>" method="POST">
+          <input class="title-input" value="<%= article.title %>" name="title" id="title" placeholder="Titel...">
+          <textarea class="article-input" name="article" id="article" placeholder="Artikel..."><%= article.article %></textarea>
+          <button class="create-article-button">Änderungen veröffentlichen</button>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+    <%- include("includes/footer") %>
+  </body>
+</html>

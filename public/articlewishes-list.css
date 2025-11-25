@@ -1,0 +1,37 @@
+/* Header */
+
+.article-button,
+.articlewish-button,
+.contact-button {
+  background-color: rgb(241, 240, 228);
+
+  color: black;
+}
+
+/* Artikelwunschliste Seite */
+
+.articlewishes-list-div {
+  text-align: center;
+}
+
+.articlewishes-list-email,
+.articlewishes-list-articlewish {
+  font-size: 17px;
+}
+
+.articlewishes-list-email {
+  color: rgb(62, 63, 41);
+  font-weight: bold;
+}
+
+.articlewishes-list-articlewish {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding-top: 0;
+    margin-top: 110px;
+  }
+}

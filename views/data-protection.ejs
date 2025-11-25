@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp</title>
+    <link rel="stylesheet" href="/general.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/data-protection.css">
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <%- include("includes/header") %>
+    <main>
+      <div class="data-protection-text">
+        <p><b>Datenschutzerklärung</b></p>
+        <p>Diese Website wird verwaltet von <%= admin.adminVisualName %>.</p>
+        <p>Es werden bei der Registrierung eingegebene Emailadresse, Benutzername und Passwort auf unbestimmte Zeit abgespeichert.</p>
+        <p>Die Emailadresse wird verwendet, um Kontakt aufnehmen zu können mit Benutzer, Benutzername und Password werden verwendet, damit Benutzer ein Konto erstellen können.</p>
+        <p>Ausserdem wird ein Cookie auf dem Browser des Benutzers abgespeichert, um ihn einzuloggen.</p>
+        <p>Auch wurden verschiedene Externe Dienste, wie Node.js Frameworks oder ein Hostinganbieter, zur Erstellung und Veröffentlichung der Website verwendet. Es ist dem Inhaber nicht bekannt, ob diese Dienste auch Benutzerdaten sammeln.</p>
+        <p>Bei Fragen, kontaktieren Sie den Inhaber über die Emailadresse: <%= adminEmail.email %></p>
+      </div>
+    </main>
+  </body>
+</html>

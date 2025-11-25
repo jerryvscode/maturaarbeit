@@ -1,0 +1,180 @@
+/* Header */
+
+.article-button,
+.articlewish-button,
+.contact-button {
+  background-color: rgb(241, 240, 228);
+
+  color: black;
+}
+
+/* Dashboard Seite */
+
+.dashboard-div {
+  text-align: center;
+}
+
+.dashboard-title {
+  text-align: center;
+
+  font-size: 25px;
+  color: rgb(62, 63, 41);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.dashboard-email {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  font-size: 15px;
+  color: black;
+}
+
+.dashboard-buttons {
+  padding: 5px 7px;
+  margin-top: 10px;
+
+  background-color: rgb(62, 63, 41);
+
+  font-size: 15px;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dashboard-buttons:hover {
+  opacity: 0.8;
+}
+.dashboard-buttons:active {
+  opacity: 0.6;
+}
+
+.dashboard-forms {
+  display: inline-block;
+  text-align: center;
+}
+
+.change-logo-form-div {
+  text-align: center;
+}
+
+.change-logo-legend,
+.security-info {
+  margin-bottom: 10px;
+
+  display: block;
+  text-align: center;
+  
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.security-info-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.security-info {
+  width: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.change-username-input,
+.change-password-input,
+.dashboard-input {
+  width: 300px;
+  padding: 4px 2px;
+
+  font-size: 15px;
+
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(62, 63, 41);
+  border-radius: 7px;
+}
+
+.logo-input {
+  padding: 2px 2px;
+}
+
+.writer-list {
+  display: block;
+  text-align: center;
+
+  font-size: 20px;
+}
+
+.logout-button {
+  margin-top: 10px;
+  padding: 7px 7px;
+
+  background-color: rgb(188, 168, 141);
+
+  font-size: 15px;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+  
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.logout-button:hover,
+.logout-button:hover {
+  opacity: 0.8;
+}
+.logout-button:active {
+  opacity: 0.6;
+}
+
+.notice {
+  width: 465px;
+  padding: 5px 5px;
+  margin-top: -10px;
+  margin-left: 180px;
+
+  background-color: rgba(188, 168, 141, 0.3);
+
+  border-radius: 6px;
+}
+
+/* Benutzerliste Seite */
+
+.users-list-div {
+  text-align: center;
+}
+
+.users-list-email,
+.users-list-username {
+  font-size: 17px;
+}
+
+.users-list-email {
+  color: rgb(62, 63, 41);
+  font-weight: bold;
+}
+
+.users-list-username {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+/* Bildschirmanpassung */
+
+
+@media (max-width: 510px) {
+  body {
+    margin-top: 110px;
+  }
+
+  .dashboard-input {
+    width: 170px;
+  }
+}
