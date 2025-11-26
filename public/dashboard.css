@@ -1,0 +1,221 @@
+/* Header */
+
+.article-button,
+.articlewish-button,
+.contact-button {
+  background-color: rgb(241, 240, 228);
+
+  color: black;
+}
+
+/* Dashboard Seite */
+
+.dashboard-div {
+  text-align: center;
+}
+
+.dashboard-title,
+.writerlist-title {
+  text-align: center;
+
+  font-size: 25px;
+  color: rgb(62, 63, 41);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.dashboard-email {
+  margin-top: -20px;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  font-size: 15px;
+  color: black;
+}
+
+.dashboard-buttons {
+  padding: 5px 7px;
+  margin-top: 10px;
+
+  background-color: rgb(62, 63, 41);
+
+  font-size: 15px;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dashboard-buttons:hover {
+  opacity: 0.8;
+}
+.dashboard-buttons:active {
+  opacity: 0.6;
+}
+
+.dashboard-forms {
+  display: inline-block;
+  text-align: center;
+}
+
+.logout-button {
+  margin-top: 10px;
+  padding: 7px 7px;
+
+  background-color: rgb(188, 168, 141);
+
+  font-size: 15px;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+  
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.logout-button:hover,
+.logout-button:hover {
+  opacity: 0.8;
+}
+.logout-button:active {
+  opacity: 0.6;
+}
+
+/* Logoändernseite */
+
+.change-logo-form-div {
+  text-align: center;
+}
+
+.logo-input {
+  padding: 2px 2px;
+}
+
+.change-logo-legend,
+.security-info {
+  margin-bottom: 10px;
+
+  display: block;
+  text-align: center;
+  
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Sicherheitsinformationsseite */
+
+.security-info-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.security-info {
+  width: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+/* Email-/Passwortänderungsseite */
+
+.change-email-input,
+.change-password-input,
+.dashboard-input {
+  width: 300px;
+  padding: 4px 2px;
+
+  font-size: 15px;
+
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(62, 63, 41);
+  border-radius: 7px;
+}
+
+/* Schreiberlistenseite */
+
+.writer-list {
+  display: block;
+  text-align: center;
+
+  font-size: 20px;
+}
+
+/* Errormeldung */
+
+.error-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.notice {
+  width: 407px;
+  padding: 5px 5px;
+  margin-top: -10px;
+
+  background-color: rgba(188, 168, 141, 0.3);
+
+  border-radius: 6px;
+}
+
+/* Benutzerliste Seite */
+
+.users-list-div {
+  text-align: center;
+}
+
+.users-list-email,
+.users-list-username {
+  font-size: 17px;
+}
+
+.users-list-email {
+  color: rgb(62, 63, 41);
+  font-weight: bold;
+}
+
+.users-list-username {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+/* Bildschirmgrösseanpassung */
+
+@media (max-width: 510px) {
+
+  .dashboard-input {
+    width: 170px;
+  }
+
+  .security-info {
+    width: 320px;
+  }
+
+  .change-password-input {
+    margin-top: 8px;
+  }
+
+  .dashboard-title {
+    margin-top: -80px;
+  }
+
+  .writerlist-title {
+    margin-top: -80px;
+  }
+
+  .users-list-div {
+    margin-top: -80px;
+  }
+
+  .security-info-div {
+    margin-top: -100px;
+  }
+
+  .notice {
+    width: 300px;
+  }
+}
