@@ -39,10 +39,21 @@
   color: rgb(62, 63, 41);
 }
 
+.maturaarbeit-link {
+  color: black;
+}
+.maturaarbeit-link:hover {
+  opacity: 0.8;
+}
+.maturaarbeit-link:active {
+  opacity: 0.6;
+}
+
 /* Bildschirmgrösseanpassung */
 
 @media (max-width: 600px) {
   .contact-div {
     margin-top: -50px;
   }
+
 }
