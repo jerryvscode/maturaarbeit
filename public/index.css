@@ -121,9 +121,17 @@
 
 @media (max-width: 600px) {
   .articles {
-    margin-top: -90px;
     margin-right: 20px;
     margin-left: 20px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .order-div {
+    margin-top: -85px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 
     grid-template-columns: 1fr;
   }
@@ -152,3 +160,4 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
+
