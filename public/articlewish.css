@@ -1,0 +1,117 @@
+/* Header */
+
+.articlewish-button {
+  background-color: rgb(125, 141, 134);
+
+  color: white;
+}
+
+.article-button,
+.contact-button {
+  background-color: rgb(241, 240, 228);
+
+  color: black;
+}
+
+/* Artikelwunsch Seite */
+
+.articlewish-div {
+  margin-top: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articlewish-form {
+  height: 340px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email-input {
+  width: 300px;
+
+  font-size: 15px;
+
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(62, 63, 41);
+  border-radius: 7px;
+}
+
+.articlewish-input {
+  width: 300px;
+  padding-bottom: 190px;
+
+  font-size: 15px;
+
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(62, 63, 41);
+  border-radius: 7px;
+}
+
+.accept-data-protection {
+  text-align: center;
+  font-size: 11px;
+}
+
+.data-protection-link {
+  color: black;
+}
+.data-protection-link:hover {
+  opacity: 0.8;
+}
+.data-protection-link:active {
+  opacity: 0.6;
+}
+
+.send-button {
+  padding: 5px 10px;
+
+  background-color: rgb(62, 63, 41);
+
+  font-size: 15px;
+  color: white;
+  
+  border: none;
+  border-radius: 50px;
+
+  transition: opacity 0.2s;
+}
+
+.send-button:hover {
+  opacity: 0.7;
+}
+
+/* Errormeldung */
+
+.notice {
+  width: 300px;
+  margin-top: -10px;
+  padding: 5px 5px;
+
+  background-color: rgba(175, 20, 0, 0.1);
+
+  text-align: center;
+
+  border-radius: 6px;
+}
+
+/* Bildschirmgrösseanpassung */
+
+@media (max-width: 600px) {
+  .articlewish-div {
+    margin-top: -30px;
+  }
+
+  .articlewish-form {
+  width: 300px;
+  height: 350px;
+  }
+}

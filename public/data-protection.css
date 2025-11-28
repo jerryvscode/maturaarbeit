@@ -1,0 +1,32 @@
+/* Header */
+
+.article-button,
+.articlewish-button,
+.contact-button {
+  background-color: rgb(241, 240, 228);
+
+  color: black;
+}
+
+/* Datenschutzseite */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.data-protection-text {
+  width: 500px;
+
+  text-align: center;
+}
+
+/* Bildschirmgrösseanpassung */
+
+@media (max-width: 600px) {
+  .data-protection-text {
+    width: 320px;
+    margin-top: -100px;
+  }
+}

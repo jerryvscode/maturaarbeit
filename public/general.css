@@ -1,0 +1,51 @@
+/* Allgemeine CSS-Datei -> Verändert alle Seiten */
+
+/* Seitenformatierung */
+
+body {
+  margin-top: 200px;
+  
+  background-color: rgb(241, 240, 228);
+}
+
+/* Textformatierung */
+
+p, button, legend {
+  font-family:'Segoe UI';
+}
+
+/* Footer */
+
+footer {
+  bottom: 0;
+  margin-top: 1200px;
+
+  text-align: center;
+}
+
+.footer-buttons {
+  background-color: rgba(188, 168, 141, 0.9);
+
+  border: none;
+  border-radius: 3px;
+
+  font-size: 15px;
+  color: white;
+
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.footer-buttons:hover {
+  opacity: 0.8;
+}
+.footer-buttons:active {
+  opacity: 0.6;
+}
+
+/* Bildschirmgrösseanpassung */
+
+@media (max-width: 600px) {
+  footer {
+    margin-top: 450px;
+  }
+}
